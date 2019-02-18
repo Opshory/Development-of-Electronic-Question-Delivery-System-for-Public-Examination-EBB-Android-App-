@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_publish__question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#f5f5f5"
+    tools:context="bd.ac.kuet.ebb.Publish_Question">
+
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:background="@drawable/lay_back"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/cattagory"
+                        android:popupBackground="#ffffff"
+                        android:background="@drawable/bg_edittext"
+                        android:layout_weight="1" />
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_edittext"
+                        android:inputType="number"
+                        android:layout_marginLeft="10dp"
+                        android:ems="10"
+                        android:hint="YEAR"
+                        android:id="@+id/year"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/board"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_edittext"
+                        android:popupBackground="#ffffff"
+                        android:layout_weight="1" />
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:popupBackground="#ffffff"
+                        android:background="@drawable/bg_edittext"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/set"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/subject"
+                        android:popupBackground="#ffffff"
+                        android:background="@drawable/bg_edittext"
+                        android:layout_weight="1" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Select a date (DD/MM/YYYY)"
+                        android:textColor="#4e4e4e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:background="#f1f1f1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                    android:text="+"
+                    android:textSize="20dp"
+                    android:textColor="#fff"
+                        android:background="@drawable/uparrow"
+                    android:layout_width="30dp"
+                        android:backgroundTint="#898989"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/dayup"
+                    android:layout_height="30dp" />
+
+                    <Button
+                        android:text="+"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/uparrow"
+                        android:layout_width="30dp"
+                        android:backgroundTint="#898989"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/monthup"
+                        android:layout_height="30dp" />
+
+                    <Button
+                        android:text="+"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/uparrow"
+                        android:backgroundTint="#898989"
+                        android:layout_width="30dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/yearup"
+                        android:layout_height="30dp" />
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#f1f1f1"
+                    android:focusable="true"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_edittext"
+                        android:inputType="number"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:ems="10"
+                        android:hint="DD"
+                        android:id="@+id/day"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_edittext"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:ems="10"
+                        android:hint="MM"
+                        android:id="@+id/month"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_edittext"
+                        android:inputType="number"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="10dp"
+                        android:ems="10"
+                        android:hint="YYYY"
+                        android:id="@+id/yr"
+                        android:layout_weight="1" />
+
+
+
+        </LinearLayout>
+
+                <LinearLayout
+                    android:background="#f1f1f1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:text="-"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:background="@drawable/downarrow"
+                        android:layout_width="30dp"
+                        android:backgroundTint="#898989"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/daydown"
+                        android:layout_height="30dp" />
+
+                    <Button
+                        android:text="-"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:background="@drawable/downarrow"
+                        android:layout_width="30dp"
+                        android:backgroundTint="#898989"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/monthdown"
+                        android:layout_height="30dp" />
+
+                    <Button
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/downarrow"
+                        android:layout_width="30dp"
+                        android:backgroundTint="#898989"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/yeardown"
+                        android:layout_height="30dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Select a time (HH/MM/SS)"
+                        android:textColor="#4e4e4e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:background="#f1f1f1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:text="+"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/uparrow"
+                        android:layout_width="30dp"
+                        android:backgroundTint="#898989"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/hourup"
+                        android:layout_height="30dp" />
+
+                    <Button
+                        android:text="+"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/uparrow"
+                        android:layout_width="30dp"
+                        android:backgroundTint="#898989"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/minuteup"
+                        android:layout_height="30dp" />
+
+                    <Button
+                        android:text="+"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/uparrow"
+                        android:layout_width="30dp"
+                        android:backgroundTint="#898989"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/secondup"
+                        android:layout_height="30dp" />
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:background="#f1f1f1"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_edittext"
+                        android:inputType="number"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:ems="10"
+                        android:hint="Hour"
+                        android:id="@+id/hour"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_edittext"
+                        android:inputType="number"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="10dp"
+                        android:ems="10"
+                        android:hint="Minute"
+                        android:id="@+id/minute"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_edittext"
+                        android:inputType="number"
+                        android:layout_marginLeft="10dp"
+                        android:textAlignment="center"
+                        android:ems="10"
+                        android:hint="Second"
+                        android:id="@+id/second"
+                        android:layout_weight="1" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="#f1f1f1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:layout_width="30dp"
+                        android:backgroundTint="#898989"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/downarrow"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/hourdown"
+                        android:layout_height="30dp" />
+
+                    <Button
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:layout_width="30dp"
+                        android:backgroundTint="#898989"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/downarrow"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/minutedown"
+                        android:layout_height="30dp" />
+
+                    <Button
+                        android:text="-"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:background="@drawable/downarrow"
+                        android:layout_width="30dp"
+                        android:backgroundTint="#898989"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:id="@+id/seconddown"
+                        android:layout_height="30dp" />
+
+
+
+
+
+                </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:text="Preview"
+                    android:textColor="#4e4e4e"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_bg"
+                    android:padding="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/preview"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:text="Publish"
+                    android:textColor="#4e4e4e"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_bg"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/publish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:text="Halt Publishing"
+                    android:textColor="#4e4e4e"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_bg"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/haltpublishing"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:text="Exam Finished"
+                    android:textColor="#4e4e4e"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_bg"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:id="@+id/finishExam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

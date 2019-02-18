@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_im_student"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#f5f5f5"
+    tools:context="bd.ac.kuet.ebb.ImStudent">
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:padding="16dp"
+                android:background="@drawable/lay_back"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/cattagory"
+                        android:popupBackground="#ffffff"
+                        android:background="@drawable/bg_edittext"
+                        android:layout_weight="1" />
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_edittext"
+                        android:inputType="number"
+                        android:layout_marginLeft="10dp"
+                        android:ems="10"
+                        android:hint="YEAR"
+                        android:id="@+id/year"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/board"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_edittext"
+                        android:popupBackground="#ffffff"
+                        android:layout_weight="1" />
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:popupBackground="#ffffff"
+                        android:background="@drawable/bg_edittext"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/set"
+                        android:layout_weight="1" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/subject"
+                        android:popupBackground="#ffffff"
+                        android:background="@drawable/bg_edittext"
+                        android:layout_weight="1" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="50dp"
+                    android:layout_marginTop="-40dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:hint="UserID"
+                        android:textColor="#4d4d4d"
+                        android:inputType="textEmailAddress"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_edittext"
+                        android:ems="10"
+                        android:id="@+id/SUserID"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Password"
+                        android:textColor="#4d4d4d"
+                        android:inputType="textPassword"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bg_edittext"
+                        android:ems="10"
+                        android:id="@+id/SPassword"
+                        android:layout_weight="1" />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+
+                <Button
+                    android:text="Go"
+                    android:textColor="#4e4e4e"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_bg"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:id="@+id/go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
